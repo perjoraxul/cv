@@ -1,0 +1,1 @@
+Purpose : build python skills and build git repository

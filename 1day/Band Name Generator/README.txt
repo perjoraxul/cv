@@ -1,0 +1,1 @@
+Simple generator that demonstrates the use of print() function and variables in python.

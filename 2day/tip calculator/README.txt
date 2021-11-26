@@ -1,0 +1,1 @@
+Python script that demonstrates the use of f string formatting, type conversion, round() function.

@@ -1,12 +1,13 @@
-age = input("What is your current age?")
+print("Welcome to the tip calculator!")
+bill = input("What was the total bill? ")
+tip = input("How much tip would you like to give? 10, 12, or 15? ")
+people = input("How many people to split the bill? ")
 
+totalBill = float(bill) * (int(tip) / 100 + 1) 
 
-age_int = int(age)
-years_left = 90 - age_int
+perPerson = round(totalBill / int(people), 2)
 
-days = years_left * 365
-weeks = years_left * 52
-months = years_left * 12
+finalAmount = "{:.2f}".format(perPerson)
 
-print(f"You have {days} days, {weeks} weeks, and {months} months left.")
-
+print(str(type(perPerson)) + " " + str(type(finalAmount)))
+print(f"Each person should pay: ${finalAmount}")

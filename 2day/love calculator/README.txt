@@ -1,0 +1,1 @@
+Python script that demonstrates the use of lower() and count() methods.

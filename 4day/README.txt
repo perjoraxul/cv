@@ -1,1 +1,1 @@
-Python script that demonstrates the use of spli() method.
+Python script that demonstrates the use of split() method.

@@ -1,0 +1,1 @@
+passGenerator.py - simple Python script that generates a password, based on how many letters, numbers and symbols the user wants to contain

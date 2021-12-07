@@ -1,6 +1,6 @@
 import random
 
-#stages" list with ASCII for displaying status
+#list with ASCII for displaying status
 stages = ['''
   +---+
   |   |

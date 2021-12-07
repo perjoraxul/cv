@@ -1,1 +1,1 @@
-Python script that let's you play hangman vs. computer. 
+Python script that lets you play hangman vs. computer. 

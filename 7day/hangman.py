@@ -1,66 +1,9 @@
 import random
+import hangman_art
+import hangman_words
 
-#list with ASCII for displaying status
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
-
-#list of words from which the computer will randomly select one
-word_list = ["aardvark", "baboon", "camel"]
-chosen_word = random.choice(word_list)
+#list of words from which the computer will randomly select one imported from hangman_words
+chosen_word = random.choice(hangman_words.word_list)
 
 #this is only for testing purposes
 print(f'The solution is {chosen_word}.')
@@ -74,12 +17,19 @@ in_game = True
 for i in range(len(chosen_word)) : 
   display.append('_') #display += i
 
+#printing the logo imported from "hangman_art"
+print(hangman_art.logo)
+
 #conditions for running
 while "_" in display and in_game :
   
   #user input of a letter that user thinks it's in the word  
   guess = input("Guess a letter: ").lower()
 
+  for i in display :
+    if i == guess :
+      print("You've already chose that letter!")
+  
   countt = 0
   right_count = len(chosen_word)
 
@@ -98,7 +48,8 @@ while "_" in display and in_game :
   if right_count == len(chosen_word) :  
     lives -= 1
     print(f"You have {lives} more lives.")
-    print(stages[lives])
+    #list with ASCII for displaying status imported from "hangman_art"
+    print(hangman_art.stages[lives])
     if lives == 0 :
       in_game = False
       print("You lost!")

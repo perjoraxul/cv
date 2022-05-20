@@ -1,5 +1,6 @@
-from art import logo
 import os
+from art import logo
+
 
 def clear() : 
     clear = lambda: os.system("cls")

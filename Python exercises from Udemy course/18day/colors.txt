@@ -1,0 +1,2 @@
+[<colorgram.py Color: Rgb(r=251, g=249, b=245), 95.04755172856959%>, <colorgram.py Color: Rgb(r=207, g=166, b=126), 1.8841260269097309%>, <colorgram.py Color: Rgb(r=248, g=233, b=236), 0.8379879983786938%>, <colorgram.py Color: Rgb(r=139, g=48, b=106), 0.7466412266566488%>, <colorgram.py Color: Rgb(r=164, g=169, b=38), 0.7462705011220626%>, <colorgram.py Color: 
+Rgb(r=244, g=79, b=56), 0.7374225183632714%>]
